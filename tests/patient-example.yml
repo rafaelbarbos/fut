@@ -1,0 +1,5 @@
+name: Teste do paciente
+input: instances/patient_example.json
+expected_output:
+  returncode: 0
+  error_contains: ""  # ou algum trecho esperado do stderr, se quiser testar erro

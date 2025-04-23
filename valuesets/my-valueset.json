@@ -1,0 +1,13 @@
+{
+    "resourceType": "ValueSet",
+    "id": "my-valueset",
+    "status": "active",
+    "compose": {
+      "include": [
+        {
+          "system": "http://hl7.org/fhir/v3/MaritalStatus"
+        }
+      ]
+    }
+  }
+  
