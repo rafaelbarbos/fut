@@ -1,9 +1,10 @@
 Plano de Construção - FUT
 
-    - Priorização da análise de requisitos para o fut;
-    - Definição e construção do documento de especificação de testes;
-    - Tecnologia utilizada: Python. Será feita analise técnica referente às bibliotecas e ferramentas que serão utilizadas para os testes do FUT como SpecFlow, BDD etc.
-    - Repartição da interface
+    1. Definição e construção do documento de especificação de testes;
+    1.1. Definição dos parâmetros;
+    2. Tecnologia utilizada: Python. Será feita analise técnica referente às bibliotecas e ferramentas que serão utilizadas para os testes do FUT.
+    3. Repartição da interface;
+    4. Geração de relatórios;
     - Repositório: https://github.com/rafaelbarbos/fut
     - Os critérios de aceitação ainda serão definidos.
     - Comunicação via WhatsApp e Discord.
