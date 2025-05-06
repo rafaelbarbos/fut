@@ -23,7 +23,7 @@ def main():
     print("[INFO] Comparação:", "OK" if success else "FALHOU")
 
     # 4. Gera relatório
-    generate_report(test_data, output, success, format=args.report)
+    generate_report(output, report_type=args.report)
 
 if __name__ == "__main__":
     main()

@@ -8,3 +8,4 @@ def generate_report(results, report_type="txt"):
         import json
         with open("relatorio.json", "w", encoding="utf-8") as f:
             json.dump(results, f, indent=4)
+            
