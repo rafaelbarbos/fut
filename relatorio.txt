@@ -1,0 +1,29 @@
+==== FHIR VALIDATION REPORT ====
+FHIR Validation tool Version 6.5.20 (Git# 93c87c9fca93). Built 2025-04-26T00:49:02.735Z (10 days old)
+  Java:   21.0.7 from C:\Program Files\Eclipse Adoptium\jdk-21.0.7.6-hotspot on amd64 (64bit). 1994MB available
+  Paths:  Current = C:\Users\RafaelBarbosadaSilva\fut-3, Package Cache = C:\Users\RafaelBarbosadaSilva\.fhir\packages
+  Params: -version 4.0.1 -output output.json instancias/patient_example.json
+  Locale: /
+  Jurisdiction: Brazil
+Loading
+  Load FHIR v4.0 from hl7.fhir.r4.core#4.0.1  Load hl7.terminology.r4#6.2.0 - 4287 resources (00:07.443)
+  Load hl7.fhir.uv.extensions.r4#5.2.0 - 758 resources (00:02.322)
+ - 8262 resources (00:00.000)
+  Load hl7.fhir.uv.extensions.r5#5.2.0 - 758 resources (00:01.761)
+  Load hl7.terminology#6.3.0 - 4338 resources (00:00.606)
+  Load hl7.terminology.r5#6.2.0 - 4287 resources (00:01.246)
+  Load hl7.fhir.uv.extensions#5.2.0 - 758 resources (00:00.008)
+  Terminology server http://tx.fhir.org - Version Connected to Terminology Server at http://tx.fhir.org (00:01.662)
+  Package Summary: [hl7.fhir.r4.core#4.0.1, hl7.fhir.xver-extensions#0.1.0, hl7.terminology.r4#6.2.0, hl7.fhir.uv.extensions.r4#5.2.0, hl7.fhir.uv.extensions.r5#5.2.0, hl7.terminology#6.3.0, hl7.terminology.r5#6.2.0, hl7.fhir.uv.extensions#5.2.0]
+  Terminology Cache at C:\Users\RAFAEL~1\AppData\Local\Temp\default-tx-cache
+  Get set...  go (00:03.227)
+Cached new session. Cache size = 1
+Validating
+  Validate instancias\patient_example.json
+Validate Patient against http://hl7.org/fhir/StructureDefinition/Patient|4.0.1..........20..........40..........60..........80.........|
+ 00:01.712
+Done. Times: Loading: 00:18.510, validation: 00:01.713. Memory = 662Mb
+
+Done. Times: Loading: 00:18.510, validation: 00:01.713. Max Memory = 1Gb
+
+==== FIM DO RELATÓRIO ====

@@ -14,6 +14,8 @@ Plano de Construção - FUT
 EXECUTE NO TERMINAL:
     1 - pip install -r requirements.txt
 
+    2 - Verique se o
+
     2 - python main.py tests/patient-example.yml --report txt
 
 

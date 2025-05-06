@@ -1,5 +1,23 @@
-name: Teste do paciente
-input: instancias/patient_example.json
-expected_output:
-  returncode: 0
-  error_contains: ""  # ou algum trecho esperado do stderr, se quiser testar erro
+test_id: Patient-001  # Identificador único do caso de teste. 
+description: Nome do paciente não é fornecido. # Descrição do caso de teste
+context:  # Define com o que a instância deve estar em conformidade com
+  igs:  # Lista de guias de implementação a serem utilizados
+    - br.go.ses.core#0.0.1
+  profiles:  # Perfis a serem utilizados na validação
+    - https://fhir.saude.go.gov.br/r4/core/StructureDefinition/individuo 
+  resources:  # Instâncias adicionais de recursos de conformidade
+    - valuesets/my-valueset.json  # Arquivo específico
+    - instancias/ # todos os artefatos de conformidade contidos neste diretório
+instance_path: instancias/patient_example.json  # Instância a ser validada
+# Se a instância não é indicada explicitamente, considerar:
+# 1. <nome do arquivo yaml>.json
+# 2. <test_id>.json
+
+expected_results:  # Resultados esperados
+  status: success  # Expected overall level ('success', 'error', 'warning', 'information').
+  errors: []  # List of expected errors (empty list indicates success).
+  warnings: []  # List of expected warnings.
+  informations: []  # List of expected information messages.
+  invariants: # Optional.
+    - expression: "OperationOutcome.issues.count() = 0"
+      expected: true # Optional. Default is true.
