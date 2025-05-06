@@ -14,7 +14,7 @@ Plano de Construção - FUT
 EXECUTE NO TERMINAL:
     1 - pip install -r requirements.txt
 
-    2 - Verique se o
+    2 - java -version (Verificar se o Java JDK está instalado. Caso não esteja baixe em: https://www.oracle.com/java/technologies/downloads/)
 
     2 - python main.py tests/patient-example.yml --report txt
 
