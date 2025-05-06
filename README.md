@@ -10,8 +10,8 @@ Plano de Construção - FUT
     - Os critérios de aceitação ainda serão definidos.
     - Comunicação via WhatsApp e Discord.
 
-(FASE DE TESTES) COMO EXECUTAR
-EXECUTE NO TERMINAL:
+(FASE DE TESTES) COMO EXECUTAR NO TERMINAL:
+
     1 - pip install -r requirements.txt
 
     2 - java -version (Verificar se o Java JDK está instalado. Caso não esteja baixe em: https://www.oracle.com/java/technologies/downloads/)
