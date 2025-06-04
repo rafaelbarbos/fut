@@ -2,20 +2,20 @@
   "resourceType" : "OperationOutcome",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>information</td><td>Patient.meta.profile[0]</td><td>invalid</td><td>Canonical URL 'https://fhir.saude.go.gov.br/r4/core/StructureDefinition/individuo' does not resolve</td><td/><td>InstanceValidator</td></tr><tr><td>warning</td><td>Patient.meta.profile[0]</td><td>structure</td><td>Profile reference 'https://fhir.saude.go.gov.br/r4/core/StructureDefinition/individuo' has not been checked because it could not be found, and fetching it resulted in the error org.hl7.fhir.r4.utils.client.EFhirClientException: Error from https://fhir.saude.go.gov.br/r4/core: Unparseable HTML</td><td/><td>InstanceValidator</td></tr><tr><td>warning</td><td>Patient</td><td>invariant</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>error</td><td>Patient.gender</td><td>value</td><td>Value is 'male' but is fixed to 'female' in the profile https://perfil.com/mulher|1.0.0#Patient.gender</td><td/><td>InstanceValidator</td></tr><tr><td>warning</td><td>Patient</td><td>invariant</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr></table></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
-    "valueString" : "instancias\\patient_example.json"
+    "valueString" : "instancias\\homem.json"
   }],
   "issue" : [{
     "extension" : [{
       "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-      "valueInteger" : 6
+      "valueInteger" : 9
     },
     {
       "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-      "valueInteger" : 75
+      "valueInteger" : 22
     },
     {
       "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
@@ -23,14 +23,14 @@
     },
     {
       "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
-      "valueCode" : "TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"
+      "valueCode" : "_DT_Fixed_Wrong"
     }],
-    "severity" : "information",
-    "code" : "invalid",
+    "severity" : "error",
+    "code" : "value",
     "details" : {
-      "text" : "Canonical URL 'https://fhir.saude.go.gov.br/r4/core/StructureDefinition/individuo' does not resolve"
+      "text" : "Value is 'male' but is fixed to 'female' in the profile https://perfil.com/mulher|1.0.0#Patient.gender"
     },
-    "expression" : ["Patient.meta.profile[0]"]
+    "expression" : ["Patient.gender"]
   },
   {
     "extension" : [{
@@ -39,31 +39,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-      "valueInteger" : 2
-    },
-    {
-      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-      "valueString" : "InstanceValidator"
-    },
-    {
-      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
-      "valueCode" : "VALIDATION_VAL_PROFILE_UNKNOWN_ERROR"
-    }],
-    "severity" : "warning",
-    "code" : "structure",
-    "details" : {
-      "text" : "Profile reference 'https://fhir.saude.go.gov.br/r4/core/StructureDefinition/individuo' has not been checked because it could not be found, and fetching it resulted in the error org.hl7.fhir.r4.utils.client.EFhirClientException: Error from https://fhir.saude.go.gov.br/r4/core: Unparseable HTML"
-    },
-    "expression" : ["Patient.meta.profile[0]"]
-  },
-  {
-    "extension" : [{
-      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-      "valueInteger" : 1
-    },
-    {
-      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-      "valueInteger" : 2
+      "valueInteger" : 4
     },
     {
       "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
