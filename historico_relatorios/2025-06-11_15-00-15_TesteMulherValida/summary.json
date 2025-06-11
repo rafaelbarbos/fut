@@ -1,0 +1,6 @@
+{
+    "test_id": "TesteMulherValida",
+    "description": "Valida a inst\u00e2ncia 'mulher.json' contra o perfil 'Mulher', esperando sucesso na valida\u00e7\u00e3o.",
+    "comparison_success": true,
+    "timestamp": "2025-06-11_15-00-15"
+}

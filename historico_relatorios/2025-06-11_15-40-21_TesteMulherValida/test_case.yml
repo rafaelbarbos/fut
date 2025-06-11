@@ -1,0 +1,14 @@
+test_id: TesteMulherValida
+description: Valida a instância 'mulher.json' contra o perfil 'Mulher', esperando sucesso na validação.
+context:
+  resources:
+    - perfis_locais/perfil.json
+instance_path: instancias/mulher.json
+expected_results:
+  # O status geral ainda pode ser considerado sucesso, pois não há erros.
+  # O validador retorna 0 (sucesso) mesmo com avisos.
+  status: success
+  errors: []      # Esperamos uma lista de erros vazia, o que é verdade.
+  warnings:       # AQUI ESTÁ A CORREÇÃO
+    # Esperamos encontrar um aviso cuja descrição contenha este texto:
+    - description_contains: "A resource should have narrative for robust management"  

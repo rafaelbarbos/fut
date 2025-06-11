@@ -1,0 +1,16 @@
+test_id: TesteHomemComPerfilMulher
+description: Valida a instância 'homem.json' contra o perfil 'Mulher', esperando um erro.
+context:
+  # Perfis que a instância declara conformidade (opcional se já estiver na instância)
+  profiles:
+    - https://perfil.com/mulher
+  # Recursos de conformidade locais necessários para a validação
+  resources:
+    - perfis_locais/perfil.json # Caminho para a definição do perfil local
+    # - valuesets/meu-valueset-local.json # Outros recursos locais, se houver
+instance_path: instancias/homem.json # Caminho para a instância a ser validada
+expected_results:
+  status: error # Espera-se um erro de validação
+  errors:
+    - description_contains: "Value is 'male' but is fixed to 'female'"
+  # ... outros campos de expected_results

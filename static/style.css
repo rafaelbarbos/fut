@@ -1,0 +1,63 @@
+/* Estilo customizado para um scroll mais suave e tema escuro */
+body {
+    background-color: #111827; /* bg-gray-900 */
+    color: #d1d5db; /* text-gray-300 */
+    font-family: 'Inter', sans-serif; /* Uma fonte mais moderna */
+}
+
+.sidebar { 
+    background-color: #1f2937; /* bg-gray-800 */ 
+}
+
+.main-content { 
+    background-color: #111827; /* bg-gray-900 */ 
+}
+
+.card { 
+    background-color: #374151; /* bg-gray-700 */ 
+}
+
+.btn-primary { 
+    background-color: #3b82f6; /* bg-blue-600 */ 
+}
+.btn-primary:hover { 
+    background-color: #2563eb; /* bg-blue-700 */ 
+}
+.btn-primary:disabled {
+    background-color: #374151; /* bg-gray-700 */
+}
+
+/* Estilo para link da navegação ativo */
+.nav-link.active {
+    background-color: #4b5563; /* bg-gray-600 */
+    color: #ffffff; /* text-white */
+    font-weight: 600;
+}
+
+/* Animação do loader */
+.loader {
+    border: 4px solid #4b5563; /* bg-gray-600 */
+    border-top: 4px solid #3b82f6; /* bg-blue-600 */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Estilo para as abas de gerenciamento */
+.tab-btn {
+    color: #9ca3af; /* text-gray-400 */
+}
+.tab-btn.text-blue-500 {
+    color: #3b82f6 !important;
+}
+
+/* Estilo para a fonte do editor de código no modal */
+#modal-textarea {
+    font-family: 'Fira Code', monospace;
+}

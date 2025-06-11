@@ -1,0 +1,6 @@
+{
+    "test_id": "Patient-001",
+    "description": "Nome do paciente n\u00e3o \u00e9 fornecido.",
+    "comparison_success": false,
+    "timestamp": "2025-06-11_14-30-01"
+}
