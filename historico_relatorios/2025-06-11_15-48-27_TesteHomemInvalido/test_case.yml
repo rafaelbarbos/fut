@@ -1,0 +1,12 @@
+test_id: TesteHomemInvalido
+description: Valida a instância 'homem.json' contra o perfil 'Mulher', esperando um erro de gênero.
+context:
+  resources:
+    - perfis_locais/perfil.json
+instance_path: instancias/homem.json
+expected_results:
+  status: error # Não é obrigatório, mas ajuda na clareza. O comparador foca nas issues.
+  errors:
+    - description_contains: "Value is 'male' but is fixed to 'female' in the profile"
+  warnings: 
+    - description_contains: "A resource should have narrative for robust management"
